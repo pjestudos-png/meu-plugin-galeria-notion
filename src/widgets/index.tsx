@@ -1,42 +1,20 @@
-import { declareIndexPlugin, type ReactRNPlugin, WidgetLocation } from '@remnote/plugin-sdk';
-import '../style.css';
-import '../index.css'; // import <widget-name>.css
+import { declareIndexPlugin, ReactRNPlugin, WidgetLocation } from '@remnote/plugin-sdk';
 
 async function onActivate(plugin: ReactRNPlugin) {
-  // Register settings
-  await plugin.settings.registerStringSetting({
-    id: 'name',
-    title: 'What is your Name?',
-    defaultValue: 'Bob',
-  });
-
-  await plugin.settings.registerBooleanSetting({
-    id: 'pizza',
-    title: 'Do you like pizza?',
-    defaultValue: true,
-  });
-
-  await plugin.settings.registerNumberSetting({
-    id: 'favorite-number',
-    title: 'What is your favorite number?',
-    defaultValue: 42,
-  });
-
-  // A command that inserts text into the editor if focused.
-  await plugin.app.registerCommand({
-    id: 'editor-command',
-    name: 'Editor Command',
-    action: async () => {
-      plugin.editor.insertPlainText('Hello World!');
-    },
-  });
-
-  // Show a toast notification to the user.
-  await plugin.app.toast("I'm a toast!");
-
-  // Register a sidebar widget.
-  await plugin.app.registerWidget('sample_widget', WidgetLocation.RightSidebar, {
+  // Registra a barra lateral buscando EXATAMENTE o arquivo 'galeria_notion'
+  await plugin.app.registerWidget('galeria_notion', WidgetLocation.RightSidebar, {
     dimensions: { height: 'auto', width: '100%' },
+    widgetTabIcon: 'https://cdn-icons-png.flaticon.com/512/2232/2232688.png',
+    widgetTabTitle: 'Minha Biblioteca',
+  });
+
+  // O comando na Omnibar (Ctrl + /)
+  await plugin.app.registerCommand({
+    id: 'abrir-galeria',
+    name: 'Abrir Minha Biblioteca',
+    action: async () => {
+      await plugin.window.openWidgetInPane('galeria_notion');
+    },
   });
 }
 
