@@ -1,9 +1,9 @@
 {
   "manifestVersion": 1,
-  "id": "meu-plugin-Galeria-Notion",
-  "name": "GALERIA Notion",
+  "id": "visao-galeria-estilo-notion",
+  "name": "GALERIA Pro",
   "author": "PJ09",
-  "repoUrl": "https://github.com/PJ09/meu-plugin-Galeria-Notion",
+  "repoUrl": "https://github.com/pjestudos-png/meu-plugin-galeria-notion",
   "version": {
     "major": 0,
     "minor": 0,
