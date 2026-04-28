@@ -9,21 +9,6 @@ Transforme suas tabelas avançadas em uma experiência visual poderosa. Inspirad
 - **Upload de Capas:** Suporte para imagens (JPG/PNG) e GIFs animados.
 - **Filtros Avançados:** Organize por Status, Nota ou Gênero com lógica de exclusão (≠).
 
-## 🚀 Como Instalar (Tutorial)
-
-### Opção A: Pelo GitHub (Recomendado)
-1. Vá em **Settings** -> **Plugins** no seu RemNote.
-2. Clique em **Install from GitHub**.
-3. Cole este link: `https://github.com/pjestudos-png/meu-plugin-galeria-notion`
-4. Clique em **Install**.
-
-### Opção B: Manual (Via Arquivo ZIP)
-1. Baixe o arquivo `PluginZip.zip` aqui na aba [Releases](https://github.com/pjestudos-png/meu-plugin-galeria-notion/releases).
-2. Extraia o conteúdo em uma pasta no seu computador.
-3. No RemNote, vá em **Settings** -> **Plugins**.
-4. Ative o modo **Developer Mode**.
-5. Clique em **Load from Disk** e selecione a pasta que você extraiu.
-
 ## 📖 Como usar a Galeria
 1. Crie um novo Documento (**Pasta Pai**).
 2. Crie uma **Tabela Avançada** dentro deste documento.
