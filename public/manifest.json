@@ -10,7 +10,7 @@
     "patch": 1
   },
   "theme": [],
-  "enableOnMobile": false,
+  "enableOnMobile": true,
   "description": "Um plugin com banco de dados e Galery-View",
   "requestNative": false,
   "requiredScopes": [
